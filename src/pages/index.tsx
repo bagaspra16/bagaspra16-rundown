@@ -214,13 +214,13 @@ export default function Home() {
           
           {/* Scroll indicator */}
           <motion.div 
-            className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-text-secondary cursor-pointer flex flex-col items-center"
+            className="absolute bottom-6 left-0 right-0 mx-auto w-fit text-text-secondary cursor-pointer flex flex-col items-center justify-center z-20"
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
             onClick={scrollToNextSection}
           >
-            <span className="text-xs mb-2">Scroll</span>
-            <FaChevronDown />
+            <span className="text-xs md:text-sm mb-2 text-center">Scroll</span>
+            <FaChevronDown className="text-sm md:text-base" />
           </motion.div>
         </section>
         
