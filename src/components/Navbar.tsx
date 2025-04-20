@@ -275,7 +275,7 @@ const Navbar = () => {
                 
                 {/* GitHub Button */}
                 <motion.div 
-                  className="w-full mt-4 md:mt-6"
+                  className="w-full mt-2 md:mt-4"
                   variants={linkVariants}
                 >
                   <a
