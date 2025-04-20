@@ -242,7 +242,7 @@ const Navbar = () => {
                 variants={mobileMenuVariants}
               >
                 {/* Navigation Links */}
-                <div className="flex flex-col items-center justify-center space-y-4 flex-1">
+                <div className="flex flex-col items-center justify-center space-y-4">
                   {navLinks.map((link, index) => {
                     const isActive = router.pathname === link.href;
                     return (
@@ -271,23 +271,23 @@ const Navbar = () => {
                       </motion.div>
                     );
                   })}
-                </div>
                 
-                {/* GitHub Button */}
-                <motion.div 
-                  className="w-full mt-2 md:mt-4"
-                  variants={linkVariants}
-                >
-                  <a
-                    href="https://github.com/bagaspra16/bagaspra16-rundown"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-primary text-white w-full flex items-center justify-center space-x-3 py-4 px-5 rounded-lg shadow-md border-0"
+                  {/* GitHub Button */}
+                  <motion.div 
+                    className="w-full mt-4"
+                    variants={linkVariants}
                   >
-                    <FaCode className="text-base" />
-                    <span className="text-base font-semibold">GitHub Repository</span>
-                  </a>
-                </motion.div>
+                    <a
+                      href="https://github.com/bagaspra16/bagaspra16-rundown"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary text-white w-full flex items-center justify-center space-x-3 py-4 px-5 rounded-lg shadow-md border-0"
+                    >
+                      <FaCode className="text-base" />
+                      <span className="text-base font-semibold">GitHub Repository</span>
+                    </a>
+                  </motion.div>
+                </div>
               </motion.div>
             </motion.div>
           )}
