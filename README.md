@@ -56,7 +56,3 @@ Aplikasi web interaktif untuk menampilkan timeline dan detail jadwal urutan dari
 ## Kontribusi
 
 Kontribusi, isu, dan permintaan fitur sangat diterima! Silakan buat issue atau pull request.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE). 
